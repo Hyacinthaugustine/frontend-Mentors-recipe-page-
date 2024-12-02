@@ -1,0 +1,181 @@
+/* SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img,
+svg {
+  width: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.8;
+  color: #333;
+
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 140rem;
+  margin: auto;
+  padding: 9.8rem;
+  background-color: hsl(332, 51%, 32%);
+  background-color: hsl(30, 54%, 90%);
+}
+
+.article {
+  max-width: 90rem;
+  margin: auto;
+  padding: 3.2em;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.food-sample-img {
+  border-radius: 16px;
+  margin-bottom: 2.4rem;
+}
+
+.primary-heading {
+  font-size: 4.8rem;
+  line-height: 1;
+  font-family: "Young Serif", serif;
+  margin-bottom: 2.4rem;
+}
+
+.what-you-need {
+  background-color: hsl(30, 54%, 95%);
+  padding: 1.6rem 3.2rem;
+  margin: 2.4rem 0;
+  border-radius: 9px;
+}
+
+.tertary-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit", sans-serif;
+}
+
+.hr-rule {
+  margin: 2.4rem 0 1.6rem;
+}
+
+.ol-list,
+.ul-list {
+  padding: 0 1.6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.item-title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+.secondary-heading {
+  font-family: "", serif;
+  color: hsl(14, 45%, 36%);
+  font-size: 3.2rem;
+}
+
+.nutritional-section {
+  margin-top: 2.4rem;
+}
+
+.ul-li-item,
+.ol-li-item {
+  padding-left: 1.6rem;
+}
+
+.nutritions p {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.6rem 3.2rem 1.6rem;
+  border-bottom: 1px solid #4444;
+}
+
+.nutritions p:last-child {
+  padding: 1.6rem 3.2rem 0;
+  border-bottom: none;
+}
+
+.nutritional-value {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 38em) {
+  html {
+    font-size: 50%;
+  }
+
+  .food-sample-img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .article {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .sub-container {
+    padding: 3.2rem;
+  }
+
+  .primary-heading {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+
+  .article {
+    width: 100%;
+
+    border-radius: 0;
+  }
+
+  .attribution {
+    padding: 1.6rem 3.2rem;
+  }
+}
+
+/* link  */
+.attribution {
+  text-align: center;
+  margin-top: 2.4rem;
+  padding: 0 3.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(332, 51%, 32%);
+  font-size: 1.8rem;
+  font-weight: 800;
+
+  transition: all 0.4s;
+}
+
+a:hover,
+a:active {
+  color: hsl(14, 45%, 36%);
+}
